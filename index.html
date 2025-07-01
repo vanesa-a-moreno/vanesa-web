@@ -58,16 +58,21 @@
       content: attr(data-icon);
       margin-right: 8px;
     }
-    .foto-integrada {
-      width: 120px;
-      height: 120px;
+    .perfil {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .perfil img {
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
       object-fit: cover;
-      float: right;
-      margin-left: 1rem;
-      margin-bottom: 1rem;
-      border: 2px solid #fff;
       box-shadow: 0 0 8px rgba(0,0,0,0.15);
+      border: 3px solid #fff;
+      margin-bottom: 0.8rem;
+    }
+    .perfil h3 {
+      margin: 0.2rem 0 0.5rem;
     }
     .firma {
       font-family: 'Great Vibes', cursive;
@@ -78,16 +83,9 @@
     }
     footer {
       text-align: center;
-      padding: 1.5rem;
+      padding: 2.5rem 1.5rem 1.5rem;
       background: #E8E1D9;
       font-size: 0.9rem;
-    }
-    @media (max-width: 600px) {
-      .foto-integrada {
-        float: none;
-        display: block;
-        margin: 0 auto 1rem;
-      }
     }
   </style>
 </head>
@@ -106,9 +104,12 @@
   </nav>
 
   <section id="sobre-mi">
-    <img src="fotoweb.png" alt="Lic. Vanesa Moreno" class="foto-integrada" />
+    <div class="perfil">
+      <img src="fotoweb.png" alt="Lic. Vanesa Moreno" />
+      <h3>Lic. Vanesa Moreno</h3>
+      <p>Matrícula Nacional Nro: 61399</p>
+    </div>
     <h2 data-icon="📌">Sobre mí</h2>
-    <p><strong>Lic. Vanesa Moreno, Psicóloga.</strong> Matrícula Nacional Nro: 61399</p>
     <p>Soy psicóloga egresada de la Universidad de Buenos Aires, con más de una década de experiencia clínica y comunitaria. Coordiné equipos de acompañamientos terapéuticos en instituciones y fundé el equipo interdisciplinario <strong>Caminos</strong>, orientado a la atención de niños y jóvenes con discapacidad.</p>
     <p>Me especialicé en <strong>Terapia Cognitivo Conductual</strong>, adaptando el proceso a cada persona según sus necesidades, historia y objetivos. Actualmente brindo atención psicológica online a personas que viven en el exterior y buscan un espacio terapéutico en su lengua materna, con cercanía y mirada profesional.</p>
   </section>
