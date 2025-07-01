@@ -1,23 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lic. Vanesa Moreno - Psicóloga Online</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
     body {
       font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
       color: #333;
-      background: #f6f1eb;
+      background: #F6F1EB;
     }
     header {
-      background: #a88b6c;
+      background: #A88B6C;
       color: white;
       padding: 3rem 2rem;
       text-align: center;
@@ -30,52 +27,42 @@
     nav a {
       margin: 0 1rem;
       text-decoration: none;
-      color: #a88b6c;
+      color: #A88B6C;
       font-weight: 500;
     }
     section {
-      padding: 2rem;
+      padding: 2.5rem 2rem;
       max-width: 900px;
       margin: auto;
     }
     .btn {
       display: inline-block;
-      background: #a88b6c;
+      background: #A88B6C;
       color: white;
       padding: 0.8rem 1.5rem;
       text-decoration: none;
-      margin-top: 1rem;
       border-radius: 5px;
+      font-weight: 500;
+    }
+    .foto {
+      width: 200px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-bottom: 1rem;
     }
     footer {
       text-align: center;
       padding: 1.5rem;
-      background: #e8e1d9;
+      background: #E8E1D9;
       font-size: 0.9rem;
-    }
-    .banner {
-      width: 100%;
-      overflow: hidden;
-      background: #f6f1eb;
-    }
-    .banner img {
-      width: 100%;
-      max-height: 320px;
-      object-fit: contain;
-      display: block;
     }
   </style>
 </head>
 <body>
-
-  <div class="banner">
-    <img src="fotoweb.png" alt="Vanesa Moreno" />
-  </div>
-
   <header>
     <h1>Lic. Vanesa Moreno</h1>
     <p>Psicóloga online</p>
-    <a href="mailto:lic.vanesamoreno@gmail.com?subject=Solicitud%20de%20primera%20sesión" class="btn">✉️ Reservá tu primera sesión</a>
+    <a href="mailto:lic.vanesamoreno@gmail.com" class="btn">✉️ Reservá tu primera sesión</a>
   </header>
 
   <nav>
@@ -85,36 +72,48 @@
     <a href="#contacto">Contacto</a>
   </nav>
 
-  <section id="sobre-mi">
-    <h2>Sobre mí</h2>
-    <p><strong>Lic. Vanesa Moreno</strong> – Psicóloga (UBA, 2013)</p>
-    <p>Soy psicóloga egresada de la Universidad de Buenos Aires. Coordiné acompañamientos terapéuticos en instituciones y fundé el equipo Caminos, brindando atención interdisciplinaria a niños y jóvenes con discapacidad.</p>
-    <p>Realicé un posgrado de especialización en Terapia Cognitiva Conductual y actualmente brindo atención online.</p>
+  <section id="sobre-mi" style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center;">
+    <img src="Foto4x4.png" alt="Lic. Vanesa Moreno" class="foto">
+    <div>
+      <h2>Sobre mí</h2>
+      <p><strong>Lic. Vanesa Moreno</strong>, Psicóloga. Matrícula Nacional Nro: 61399 | Atención online</p>
+      <p>Soy psicóloga egresada de la Universidad de Buenos Aires, con más de una década de experiencia clínica y comunitaria. Coordiné equipos de acompañamientos terapéuticos en instituciones y fundé el equipo interdisciplinario <strong>Caminos</strong>, orientado a la atención de niños y jóvenes con discapacidad.</p>
+      <p>Me especialicé en <strong>Terapia Cognitivo Conductual</strong>, adaptando el proceso a cada persona según sus necesidades, historia y objetivos. Actualmente brindo atención psicológica online a personas que viven en el exterior y buscan un espacio terapéutico en su lengua materna, con cercanía y mirada profesional.</p>
+    </div>
   </section>
 
   <section id="terapia-online">
-    <h2>Terapia online</h2>
-    <p>La terapia online permite acceder a un espacio terapéutico desde cualquier lugar. Es igual de eficaz que la presencial y brinda beneficios como comodidad, accesibilidad geográfica y ahorro de tiempo.</p>
-    <p>Solo necesitás un dispositivo con conexión a internet, un espacio tranquilo y ganas de empezar.</p>
+    <h2>Terapia psicológica online</h2>
+    <p>La atención psicológica online permite iniciar un proceso terapéutico sin necesidad de asistir presencialmente a un consultorio. Es una alternativa eficaz y cómoda para quienes viven en el exterior o prefieren un entorno más íntimo para sus sesiones.</p>
+    <p>Estudios han demostrado que la terapia online es igual de eficaz que la presencial en la mayoría de los casos. Además, ofrece beneficios como:</p>
+    <ul>
+      <li>Realizar las sesiones desde tu casa o desde donde estés</li>
+      <li>Acceder a profesionales sin importar el país donde te encuentres</li>
+      <li>Ahorrar tiempo y costos de traslado</li>
+    </ul>
+    <p>Solo necesitás un dispositivo con conexión a internet y un espacio tranquilo para conversar en privacidad.</p>
   </section>
 
   <section id="motivos">
     <h2>Motivos de consulta</h2>
+    <p>Algunos de los temas que suelo trabajar son:</p>
     <ul>
-      <li>Trastornos de ansiedad (pánico, fobias, ansiedad social, etc.)</li>
-      <li>Depresión y estado de ánimo</li>
-      <li>Trastorno obsesivo compulsivo</li>
+      <li>Trastornos de ansiedad (generalizada, pánico, ansiedad social, fobias, ansiedad por la salud)</li>
+      <li>Trastorno obsesivo compulsivo (TOC)</li>
+      <li>Depresión</li>
       <li>Dificultades con el sueño</li>
-      <li>Procrastinación y perfeccionismo</li>
-      <li>Crisis vitales</li>
-      <li>Desarrollo personal</li>
+      <li>Perfeccionismo y procrastinación</li>
+      <li>Crisis vitales (duelos, migración, cambios significativos)</li>
+      <li>Desarrollo personal y cambio de proyecto de vida</li>
     </ul>
+    <p>Si estás atravesando alguna de estas situaciones o querés iniciar un proceso de autoconocimiento, estoy para acompañarte.</p>
   </section>
 
   <section id="contacto">
     <h2>Contacto</h2>
-    <p>📧 <a href="mailto:lic.vanesamoreno@gmail.com">lic.vanesamoreno@gmail.com</a></p>
-    <a href="mailto:lic.vanesamoreno@gmail.com?subject=Solicitud%20de%20primera%20sesión" class="btn">✉️ Reservá tu primera sesión</a>
+    <p>Podés escribirme para coordinar una entrevista inicial o resolver cualquier consulta.</p>
+    <p>Email: <a href="mailto:lic.vanesamoreno@gmail.com">lic.vanesamoreno@gmail.com</a></p>
+    <a href="mailto:lic.vanesamoreno@gmail.com" class="btn">✉️ Reservá tu primera sesión</a>
   </section>
 
   <footer>
@@ -122,3 +121,4 @@
   </footer>
 </body>
 </html>
+
