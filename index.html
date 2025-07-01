@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Lic. Vanesa Moreno - Psicóloga Online</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Great+Vibes&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Poppins', sans-serif;
@@ -19,11 +19,13 @@
       color: white;
       padding: 3rem 2rem;
       text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
     nav {
       background: #fff;
       padding: 1rem;
       text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     }
     nav a {
       margin: 0 1rem;
@@ -35,6 +37,10 @@
       padding: 2.5rem 2rem;
       max-width: 900px;
       margin: auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      margin-bottom: 2rem;
     }
     .btn {
       display: inline-block;
@@ -44,6 +50,10 @@
       text-decoration: none;
       border-radius: 5px;
       font-weight: 500;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background: #927256;
     }
     .foto-section {
       background: linear-gradient(180deg, #ffffff 0%, #f0ebe5 100%);
@@ -51,16 +61,33 @@
       text-align: center;
     }
     .foto {
-      width: 240px;
+      width: 220px;
       max-width: 90%;
       border-radius: 12px;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    h2::before {
+      content: attr(data-icon);
+      margin-right: 8px;
+    }
+    .firma {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2rem;
+      text-align: center;
+      color: #A88B6C;
+      margin-top: 2rem;
     }
     footer {
       text-align: center;
       padding: 1.5rem;
       background: #E8E1D9;
       font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      .foto {
+        width: 160px;
+      }
     }
   </style>
 </head>
@@ -83,14 +110,14 @@
   </div>
 
   <section id="sobre-mi">
-    <h2>Sobre mí</h2>
+    <h2 data-icon="📌">Sobre mí</h2>
     <p><strong>Lic. Vanesa Moreno, Psicóloga.</strong> Matrícula Nacional Nro: 61399</p>
     <p>Soy psicóloga egresada de la Universidad de Buenos Aires, con más de una década de experiencia clínica y comunitaria. Coordiné equipos de acompañamientos terapéuticos en instituciones y fundé el equipo interdisciplinario <strong>Caminos</strong>, orientado a la atención de niños y jóvenes con discapacidad.</p>
     <p>Me especialicé en <strong>Terapia Cognitivo Conductual</strong>, adaptando el proceso a cada persona según sus necesidades, historia y objetivos. Actualmente brindo atención psicológica online a personas que viven en el exterior y buscan un espacio terapéutico en su lengua materna, con cercanía y mirada profesional.</p>
   </section>
 
   <section id="terapia-online">
-    <h2>Terapia psicológica online</h2>
+    <h2 data-icon="💬">Terapia psicológica online</h2>
     <p>La atención psicológica online permite iniciar un proceso terapéutico sin necesidad de asistir presencialmente a un consultorio. Es una alternativa eficaz y cómoda para quienes viven en el exterior o prefieren un entorno más íntimo para sus sesiones.</p>
     <p>Estudios han demostrado que la terapia online es igual de eficaz que la presencial en la mayoría de los casos. Además, ofrece beneficios como:</p>
     <ul>
@@ -102,7 +129,7 @@
   </section>
 
   <section id="motivos">
-    <h2>Motivos de consulta</h2>
+    <h2 data-icon="🧠">Motivos de consulta</h2>
     <p>Algunos de los temas que suelo trabajar son:</p>
     <ul>
       <li>Trastornos de ansiedad (generalizada, pánico, ansiedad social, fobias, ansiedad por la salud)</li>
@@ -117,11 +144,13 @@
   </section>
 
   <section id="contacto">
-    <h2>Contacto</h2>
+    <h2 data-icon="📨">Contacto</h2>
     <p>Podés escribirme para coordinar una entrevista inicial o resolver cualquier consulta.</p>
     <p>Email: <a href="mailto:lic.vanesamoreno@gmail.com">lic.vanesamoreno@gmail.com</a></p>
     <a href="mailto:lic.vanesamoreno@gmail.com" class="btn">✉️ Reservá tu primera sesión</a>
   </section>
+
+  <div class="firma">Lic. Vanesa Moreno</div>
 
   <footer>
     <p>&copy; 2025 Lic. Vanesa Moreno - Psicóloga Online. Todos los derechos reservados.</p>
