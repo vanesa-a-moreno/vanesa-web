@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -55,26 +54,26 @@
     .btn:hover {
       background: #927256;
     }
-    .foto-section {
-      background: linear-gradient(180deg, #ffffff 0%, #f0ebe5 100%);
-      padding: 2rem 0;
-      text-align: center;
-    }
-    .foto {
-      width: 220px;
-      max-width: 90%;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    }
     h2::before {
       content: attr(data-icon);
       margin-right: 8px;
+    }
+    .foto-integrada {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      float: right;
+      margin-left: 1rem;
+      margin-bottom: 1rem;
+      border: 2px solid #fff;
+      box-shadow: 0 0 8px rgba(0,0,0,0.15);
     }
     .firma {
       font-family: 'Great Vibes', cursive;
       font-size: 2rem;
       text-align: center;
-      color: #A88B6C;
+      color: #000;
       margin-top: 2rem;
     }
     footer {
@@ -83,10 +82,11 @@
       background: #E8E1D9;
       font-size: 0.9rem;
     }
-
     @media (max-width: 600px) {
-      .foto {
-        width: 160px;
+      .foto-integrada {
+        float: none;
+        display: block;
+        margin: 0 auto 1rem;
       }
     }
   </style>
@@ -105,11 +105,8 @@
     <a href="#contacto">Contacto</a>
   </nav>
 
-  <div class="foto-section">
-    <img src="fotoweb.png" alt="Lic. Vanesa Moreno" class="foto" />
-  </div>
-
   <section id="sobre-mi">
+    <img src="fotoweb.png" alt="Lic. Vanesa Moreno" class="foto-integrada" />
     <h2 data-icon="📌">Sobre mí</h2>
     <p><strong>Lic. Vanesa Moreno, Psicóloga.</strong> Matrícula Nacional Nro: 61399</p>
     <p>Soy psicóloga egresada de la Universidad de Buenos Aires, con más de una década de experiencia clínica y comunitaria. Coordiné equipos de acompañamientos terapéuticos en instituciones y fundé el equipo interdisciplinario <strong>Caminos</strong>, orientado a la atención de niños y jóvenes con discapacidad.</p>
