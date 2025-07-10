@@ -146,28 +146,110 @@
     <p>Email: <a href="mailto:lic.vanesamoreno@gmail.com">lic.vanesamoreno@gmail.com</a></p>
     <a href="mailto:lic.vanesamoreno@gmail.com" class="btn">✉️ Reservá tu primera sesión</a>
   </section>
-<section style="background-color: #f4f4f4; padding: 60px 20px;">
-  <h2 style="text-align: center; font-size: 28px; margin-bottom: 40px;">Algunos comentarios</h2>
-  <div style="display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 20px; padding: 10px;">
-    
-    <div style="min-width: 100%; max-width: 400px; margin: auto; background-color: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); scroll-snap-align: center;">
-      <p style="font-style: italic;">“Vanesa me ayudó a identificar cuáles eran mis trabas en el trabajo que no me permitían mostrarme más y crecer. Gracias a eso pude animarme a postularme para un ascenso y lo conseguí. Muy agradecida.”</p>
-      <p style="text-align: right; font-weight: bold;">– Romina F.</p>
+<style>
+  .testimonial-section {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+    position: relative;
+  }
+
+  .testimonial-section h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  .testimonial-wrapper {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .testimonial {
+    flex: 0 0 100%;
+    max-width: 400px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    scroll-snap-align: center;
+  }
+
+  .testimonial p {
+    margin: 0 0 10px 0;
+  }
+
+  .testimonial-author {
+    text-align: right;
+    font-weight: bold;
+  }
+
+  .dots-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 6px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .dot.active {
+    background-color: #333;
+  }
+</style>
+
+<section class="testimonial-section">
+  <h2>Algunos comentarios</h2>
+
+  <div class="testimonial-wrapper" id="testimonialWrapper" onscroll="updateDots()">
+    <div class="testimonial">
+      <p><em>“Vanesa me ayudó a identificar cuáles eran mis trabas en el trabajo que no me permitían mostrarme más y crecer. Gracias a eso pude animarme a postularme para un ascenso y lo conseguí. Muy agradecida.”</em></p>
+      <p class="testimonial-author">– Romina F.</p>
     </div>
 
-    <div style="min-width: 100%; max-width: 400px; margin: auto; background-color: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); scroll-snap-align: center;">
-      <p style="font-style: italic;">“Me mudé desde Perú a México y fue muy difícil transitar la adaptación y el desarraigo. Gracias a trabajarlo en la terapia con Vanesa, las cosas fueron más sencillas para mí.”</p>
-      <p style="text-align: right; font-weight: bold;">– José Q.</p>
+    <div class="testimonial">
+      <p><em>“Me mudé desde Perú a México y fue muy difícil transitar la adaptación y el desarraigo. Gracias a trabajarlo en la terapia con Vanesa, las cosas fueron más sencillas para mí.”</em></p>
+      <p class="testimonial-author">– José Q.</p>
     </div>
 
-    <div style="min-width: 100%; max-width: 400px; margin: auto; background-color: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); scroll-snap-align: center;">
-      <p style="font-style: italic;">“Comencé con episodios de ansiedad muy fuertes y casi inhabilitantes. Empezamos de a poco a encontrar los desencadenantes y descubrir las ideas que los provocaban. Mi calidad de vida mejoró radicalmente en pocos meses.”</p>
-      <p style="text-align: right; font-weight: bold;">– Micaela M.</p>
+    <div class="testimonial">
+      <p><em>“Comencé con episodios de ansiedad muy fuertes y casi inhabilitantes. Empezamos de a poco a encontrar los desencadenantes y descubrir las ideas que los provocaban. Mi calidad de vida mejoró radicalmente en pocos meses.”</em></p>
+      <p class="testimonial-author">– Micaela M.</p>
     </div>
-
   </div>
-  <p style="text-align: center; font-size: 14px; color: #777; margin-top: 20px;">Desliza para ver más testimonios</p>
+
+  <div class="dots-container">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
 </section>
+
+<script>
+  function updateDots() {
+    const wrapper = document.getElementById("testimonialWrapper");
+    const dots = document.querySelectorAll(".dot");
+    const scrollLeft = wrapper.scrollLeft;
+    const width = wrapper.clientWidth;
+    const index = Math.round(scrollLeft / width);
+
+    dots.forEach((dot, i) => {
+      dot.classList.toggle("active", i === index);
+    });
+  }
+</script>
   <div class="firma">Lic. Vanesa Moreno</div>
 
   <footer>
