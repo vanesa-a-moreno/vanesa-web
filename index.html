@@ -1,260 +1,215 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Lic. Vanesa Moreno - Psicóloga Online</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Great+Vibes&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
-      color: #333;
-      background: #F6F1EB;
+      background-color: #ffffff;
+      color: #333333;
     }
+
     header {
-      background: #A88B6C;
-      color: white;
-      padding: 3rem 2rem;
+      background-color: #f5f5f5;
+      padding: 40px 20px;
       text-align: center;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
-    nav {
-      background: #fff;
-      padding: 1rem;
-      text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    }
-    nav a {
-      margin: 0 1rem;
-      text-decoration: none;
-      color: #A88B6C;
-      font-weight: 500;
-    }
-    section {
-      padding: 2.5rem 2rem;
-      max-width: 900px;
-      margin: auto;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-      margin-bottom: 2rem;
-    }
-    .btn {
-      display: inline-block;
-      background: #A88B6C;
-      color: white;
-      padding: 0.8rem 1.5rem;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: 500;
-      transition: background 0.3s ease;
-    }
-    .btn:hover {
-      background: #927256;
-    }
-    h2::before {
-      content: attr(data-icon);
-      margin-right: 8px;
-    }
-    .perfil {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    .perfil img {
-      width: 140px;
-      height: 140px;
+
+    header img {
+      width: 130px;
+      height: 130px;
       border-radius: 50%;
       object-fit: cover;
-      box-shadow: 0 0 8px rgba(0,0,0,0.15);
-      border: 3px solid #fff;
-      margin-bottom: 0.8rem;
+      margin-bottom: 15px;
     }
-    .perfil h3 {
-      margin: 0.2rem 0 0.5rem;
+
+    header h1 {
+      margin: 10px 0 5px;
+      font-size: 26px;
     }
-    .firma {
-      font-family: 'Great Vibes', cursive;
-      font-size: 2rem;
+
+    header h2 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: normal;
+    }
+
+    section {
+      padding: 30px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    section h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    section ul {
+      padding-left: 20px;
+    }
+
+    section ul li {
+      margin-bottom: 8px;
+    }
+
+    .testimonial-section {
+      background-color: #f4f4f4;
+      padding: 60px 20px;
+      position: relative;
       text-align: center;
-      color: #000;
-      margin-top: 2rem;
     }
+
+    .testimonial-section h2 {
+      font-size: 28px;
+      margin-bottom: 40px;
+    }
+
+    .testimonial-wrapper {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      gap: 20px;
+      padding: 10px;
+      justify-content: center;
+    }
+
+    .testimonial {
+      flex: 0 0 80%;
+      max-width: 400px;
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      scroll-snap-align: center;
+    }
+
+    .testimonial p {
+      margin: 0 0 10px 0;
+    }
+
+    .testimonial-author {
+      text-align: right;
+      font-weight: bold;
+    }
+
+    .dots-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .dot {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      margin: 0 6px;
+      background-color: #bbb;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .dot.active {
+      background-color: #333;
+    }
+
     footer {
+      background-color: #f5f5f5;
       text-align: center;
-      padding: 2.5rem 1.5rem 1.5rem;
-      background: #E8E1D9;
-      font-size: 0.9rem;
+      padding: 40px 20px 60px;
+      margin-top: 40px;
+      position: relative;
+    }
+
+    .firma {
+      font-family: 'Segoe Script', cursive;
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #000000;
+    }
+
+    .footer-text {
+      font-size: 14px;
+      color: #666;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Lic. Vanesa Moreno</h1>
-    <p>Psicóloga online</p>
-    <a href="mailto:lic.vanesamoreno@gmail.com" class="btn">✉️ Reservá tu primera sesión</a>
+    <img src="Foto4x4.png" alt="Lic. Vanesa Moreno" />
+    <h1>Lic. Vanesa Moreno, Psicóloga</h1>
+    <h2>Matrícula Nacional N° 61399</h2>
   </header>
 
-  <nav>
-    <a href="#sobre-mi">Sobre mí</a>
-    <a href="#terapia-online">Terapia online</a>
-    <a href="#motivos">Motivos de consulta</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
-
-  <section id="sobre-mi">
-    <div class="perfil">
-      <img src="foto4x4.png" alt="Lic. Vanesa Moreno" />
-      <h3>Lic. Vanesa Moreno</h3>
-      <p>Matrícula Nacional Nro: 61399</p>
-    </div>
-    <h2 data-icon="📌">Sobre mí</h2>
-    <p>Soy psicóloga egresada de la Universidad de Buenos Aires, con más de una década de experiencia clínica y comunitaria. Coordiné equipos de acompañamientos terapéuticos en instituciones y fundé el equipo interdisciplinario <strong>Caminos</strong>, orientado a la atención de niños y jóvenes con discapacidad.</p>
-    <p>Me especialicé en <strong>Terapia Cognitivo Conductual</strong>, adaptando el proceso a cada persona según sus necesidades, historia y objetivos. Actualmente brindo atención psicológica online a personas que buscan un espacio terapéutico con cercanía y mirada profesional.</p>
+  <section>
+    <h3>Atención Online</h3>
+    <p>Realizo sesiones de terapia online, brindando acompañamiento profesional desde un enfoque cognitivo-conductual, adaptado a las necesidades actuales.</p>
   </section>
 
-  <section id="terapia-online">
-    <h2 data-icon="💬">Terapia psicológica online</h2>
-    <p>La atención psicológica online permite iniciar un proceso terapéutico sin necesidad de asistir presencialmente a un consultorio. Es una alternativa eficaz y cómoda para quienes viven en el exterior o prefieren un entorno más íntimo para sus sesiones.</p>
-    <p>Estudios han demostrado que la terapia online es igual de eficaz que la presencial en la mayoría de los casos. Además, ofrece beneficios como:</p>
+  <section>
+    <h3>Consultas frecuentes</h3>
     <ul>
-      <li>Realizar las sesiones desde tu casa o desde donde estés</li>
-      <li>Acceder a profesionales sin importar el país donde te encuentres</li>
-      <li>Ahorrar tiempo y costos de traslado</li>
+      <li>Crecimiento personal y profesional</li>
+      <li>Dificultades en la comunicación</li>
+      <li>Ansiedad y manejo del estrés</li>
+      <li>Perfeccionismo y autoexigencia</li>
+      <li>Procrastinación</li>
+      <li>Desarrollo de habilidades sociales</li>
+      <li>Inseguridad o baja autoestima</li>
     </ul>
-    <p>Solo necesitás un dispositivo con conexión a internet y un espacio tranquilo para conversar en privacidad.</p>
   </section>
 
-  <section id="motivos">
-    <h2 data-icon="🧠">Motivos de consulta</h2>
-    <p>Algunos de los temas que suelo trabajar son:</p>
-    <ul>
-      <li>Desarrollo personal y cambio de proyecto de vida</li>
-      <li>Trastornos de ansiedad (generalizada, pánico, ansiedad social, fobias, ansiedad por la salud)</li>
-      <li>Trastorno obsesivo compulsivo (TOC)</li>
-      <li>Depresión</li>
-      <li>Dificultades con el sueño</li>
-      <li>Perfeccionismo y procrastinación</li>
-      <li>Crisis vitales (duelos, migración, cambios significativos)</li>  
-    </ul>
-    <p>Si estás atravesando alguna de estas situaciones o querés iniciar un proceso de autoconocimiento, estoy para acompañarte.</p>
+  <section>
+    <h3>Contacto</h3>
+    <p>¿Querés reservar tu primera sesión? <a href="mailto:lic.vanesamoreno@gmail.com">Escribime por mail</a>.</p>
   </section>
-  <section id="contacto">
-    <h2 data-icon="📨">Contacto</h2>
-    <p>Podés escribirme para coordinar una entrevista inicial o resolver cualquier consulta.</p>
-    <p>Email: <a href="mailto:lic.vanesamoreno@gmail.com">lic.vanesamoreno@gmail.com</a></p>
-    <a href="mailto:lic.vanesamoreno@gmail.com" class="btn">✉️ Reservá tu primera sesión</a>
+
+  <section class="testimonial-section">
+    <h2>Algunos comentarios</h2>
+    <div class="testimonial-wrapper" id="testimonialWrapper" onscroll="updateDots()">
+      <div class="testimonial">
+        <p><em>“Vanesa me ayudó a identificar cuáles eran mis trabas en el trabajo que no me permitían mostrarme más y crecer. Gracias a eso pude animarme a postularme para un ascenso y lo conseguí. Muy agradecida.”</em></p>
+        <p class="testimonial-author">– Romina F.</p>
+      </div>
+      <div class="testimonial">
+        <p><em>“Me mudé desde Perú a México y fue muy difícil transitar la adaptación y el desarraigo. Gracias a trabajarlo en la terapia con Vanesa, las cosas fueron más sencillas para mí.”</em></p>
+        <p class="testimonial-author">– José Q.</p>
+      </div>
+      <div class="testimonial">
+        <p><em>“Comencé con episodios de ansiedad muy fuertes y casi inhabilitantes. Empezamos de a poco a encontrar los desencadenantes y descubrir las ideas que los provocaban. Mi calidad de vida mejoró radicalmente en pocos meses.”</em></p>
+        <p class="testimonial-author">– Micaela M.</p>
+      </div>
+    </div>
+    <div class="dots-container">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
   </section>
-<style>
-  .testimonial-section {
-    background-color: #f4f4f4;
-    padding: 60px 20px;
-    position: relative;
-  }
-
-  .testimonial-section h2 {
-    text-align: center;
-    font-size: 28px;
-    margin-bottom: 40px;
-  }
-
-  .testimonial-wrapper {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    gap: 20px;
-    padding: 10px;
-  }
-
-  .testimonial {
-    flex: 0 0 100%;
-    max-width: 400px;
-    margin: auto;
-    background-color: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    scroll-snap-align: center;
-  }
-
-  .testimonial p {
-    margin: 0 0 10px 0;
-  }
-
-  .testimonial-author {
-    text-align: right;
-    font-weight: bold;
-  }
-
-  .dots-container {
-    text-align: center;
-    margin-top: 20px;
-  }
-
-  .dot {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    margin: 0 6px;
-    background-color: #bbb;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-
-  .dot.active {
-    background-color: #333;
-  }
-</style>
-
-<section class="testimonial-section">
-  <h2>Algunos comentarios</h2>
-
-  <div class="testimonial-wrapper" id="testimonialWrapper" onscroll="updateDots()">
-    <div class="testimonial">
-      <p><em>“Vanesa me ayudó a identificar cuáles eran mis trabas en el trabajo que no me permitían mostrarme más y crecer. Gracias a eso pude animarme a postularme para un ascenso y lo conseguí. Muy agradecida.”</em></p>
-      <p class="testimonial-author">– Romina F.</p>
-    </div>
-
-    <div class="testimonial">
-      <p><em>“Me mudé desde Perú a México y fue muy difícil transitar la adaptación y el desarraigo. Gracias a trabajarlo en la terapia con Vanesa, las cosas fueron más sencillas para mí.”</em></p>
-      <p class="testimonial-author">– José Q.</p>
-    </div>
-
-    <div class="testimonial">
-      <p><em>“Comencé con episodios de ansiedad muy fuertes y casi inhabilitantes. Empezamos de a poco a encontrar los desencadenantes y descubrir las ideas que los provocaban. Mi calidad de vida mejoró radicalmente en pocos meses.”</em></p>
-      <p class="testimonial-author">– Micaela M.</p>
-    </div>
-  </div>
-
-  <div class="dots-container">
-    <span class="dot active"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-  </div>
-</section>
-
-<script>
-  function updateDots() {
-    const wrapper = document.getElementById("testimonialWrapper");
-    const dots = document.querySelectorAll(".dot");
-    const scrollLeft = wrapper.scrollLeft;
-    const width = wrapper.clientWidth;
-    const index = Math.round(scrollLeft / width);
-
-    dots.forEach((dot, i) => {
-      dot.classList.toggle("active", i === index);
-    });
-  }
-</script>
-  <div class="firma">Lic. Vanesa Moreno</div>
 
   <footer>
-    <p>&copy; 2025 Lic. Vanesa Moreno - Psicóloga Online. Todos los derechos reservados.</p>
-
+    <div class="firma">Vanesa Moreno</div>
+    <div class="footer-text">© 2025 Todos los derechos reservados.</div>
   </footer>
+
+  <script>
+    function updateDots() {
+      const wrapper = document.getElementById("testimonialWrapper");
+      const dots = document.querySelectorAll(".dot");
+      const scrollLeft = wrapper.scrollLeft;
+      const width = wrapper.clientWidth;
+      const index = Math.round(scrollLeft / width);
+
+      dots.forEach((dot, i) => {
+        dot.classList.toggle("active", i === index);
+      });
+    }
+  </script>
 </body>
 </html>
