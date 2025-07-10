@@ -130,13 +130,13 @@
     <h2 data-icon="🧠">Motivos de consulta</h2>
     <p>Algunos de los temas que suelo trabajar son:</p>
     <ul>
+      <li>Desarrollo personal y cambio de proyecto de vida</li>
       <li>Trastornos de ansiedad (generalizada, pánico, ansiedad social, fobias, ansiedad por la salud)</li>
       <li>Trastorno obsesivo compulsivo (TOC)</li>
       <li>Depresión</li>
       <li>Dificultades con el sueño</li>
       <li>Perfeccionismo y procrastinación</li>
-      <li>Crisis vitales (duelos, migración, cambios significativos)</li>
-      <li>Desarrollo personal y cambio de proyecto de vida</li>
+      <li>Crisis vitales (duelos, migración, cambios significativos)</li>  
     </ul>
     <p>Si estás atravesando alguna de estas situaciones o querés iniciar un proceso de autoconocimiento, estoy para acompañarte.</p>
   </section>
@@ -154,5 +154,52 @@
     <p>&copy; 2025 Lic. Vanesa Moreno - Psicóloga Online. Todos los derechos reservados.</p>
 
   </footer>
+  <section style="background-color: #f7f7f7; padding: 40px 0; text-align: center;">
+  <h2 style="font-size: 24px; margin-bottom: 30px;">Lo que dicen quienes me consultaron</h2>
+  <div class="slider">
+    <div class="slides">
+      <div class="slide">
+        <p style="font-style: italic;">“Vanesa me ayudó a reconocer cuáles eran las barreras internas que me estaban limitando en el trabajo. Gracias a su acompañamiento, gané confianza, me animé a postularme para un ascenso… ¡y lo obtuve! Estoy profundamente agradecida.”<br><strong>— Romina F.</strong></p>
+      </div>
+      <div class="slide">
+        <p style="font-style: italic;">“Mudarme de Perú a México fue un proceso muy desafiante. Sentía el desarraigo y la adaptación como una carga difícil de llevar. Gracias al espacio terapéutico con Vanesa, pude atravesar ese momento con más claridad y fortaleza. Todo se volvió mucho más llevadero.”<br><strong>— José Q.</strong></p>
+      </div>
+      <div class="slide">
+        <p style="font-style: italic;">“Cuando comencé la terapia, tenía episodios de ansiedad muy intensos que afectaban mi vida cotidiana. Con Vanesa fuimos identificando los desencadenantes y trabajando sobre los pensamientos que me generaban esas reacciones. Aunque seguimos en proceso, mi calidad de vida mejoró radicalmente en pocos meses.”<br><strong>— Micaela M.</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .slider {
+    overflow: hidden;
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .slides {
+    display: flex;
+    width: 300%;
+    animation: slide 15s infinite;
+  }
+
+  .slide {
+    width: 100%;
+    flex-shrink: 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  @keyframes slide {
+    0%   { transform: translateX(0%); }
+    33%  { transform: translateX(0%); }
+    38%  { transform: translateX(-100%); }
+    66%  { transform: translateX(-100%); }
+    71%  { transform: translateX(-200%); }
+    100% { transform: translateX(-200%); }
+  }
+</style>
 </body>
 </html>
