@@ -2,119 +2,199 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Lic. Vanesa Moreno - Psicóloga Online</title>
-    <style>
-        body {
-            font-family: 'Georgia', serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fafafa;
-            color: #333;
-        }
-        header {
-            background-color: #f2f2f2;
-            padding: 40px 20px;
-            text-align: center;
-        }
-        header h1 {
-            font-size: 2em;
-            margin-bottom: 5px;
-        }
-        header p {
-            margin-top: 0;
-            font-style: italic;
-        }
-        .foto-container {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-        .foto-container img {
-            width: 180px;
-            height: 180px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 4px solid #ddd;
-        }
-        section {
-            padding: 30px 20px;
-            max-width: 800px;
-            margin: auto;
-        }
-        .icono {
-            margin-right: 6px;
-        }
-        .testimonios {
-            background-color: #e9e9e9;
-            padding: 40px 20px;
-            text-align: center;
-        }
-        .testimonios h2 {
-            margin-bottom: 20px;
-        }
-        .comentario {
-            margin: 0 auto 30px;
-            max-width: 600px;
-            background-color: #fff;
-            padding: 15px 20px;
-            border-radius: 12px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        footer {
-            background-color: #f2f2f2;
-            text-align: center;
-            padding: 30px 10px;
-        }
-        .firma {
-            font-family: 'Brush Script MT', cursive;
-            font-size: 1.8em;
-            color: #000;
-            margin-bottom: 15px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lic. Vanesa Moreno - Psicóloga Online</title>
+  <style>
+    @media (max-width: 768px) {
+      body {
+        background-color: #1e1e1e;
+        color: #f1f1f1;
+      }
+      .comentario {
+        background-color: #333;
+        color: #fff;
+      }
+    }
+    body {
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fafafa;
+      color: #333;
+    }
+    header {
+      background-color: #f2f2f2;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2em;
+      margin-bottom: 5px;
+    }
+    header p {
+      margin-top: 0;
+      font-style: italic;
+    }
+    .foto-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .foto-container img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #ddd;
+    }
+    nav {
+      text-align: center;
+      background-color: #333;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 30px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .icono {
+      margin-right: 6px;
+    }
+    .carrusel {
+      display: flex;
+      overflow: hidden;
+      position: relative;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .comentario {
+      min-width: 100%;
+      transition: transform 0.5s ease;
+      padding: 15px 20px;
+      border-radius: 12px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      box-sizing: border-box;
+    }
+    .carrusel-container {
+      position: relative;
+      margin-top: 20px;
+    }
+    .dots {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .dot {
+      height: 10px;
+      width: 10px;
+      margin: 0 4px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      cursor: pointer;
+    }
+    .dot.active {
+      background-color: #717171;
+    }
+    footer {
+      background-color: #f2f2f2;
+      text-align: center;
+      padding: 30px 10px;
+    }
+    .firma {
+      font-family: 'Brush Script MT', cursive;
+      font-size: 1.8em;
+      color: #000;
+      margin-bottom: 15px;
+    }
+  </style>
 </head>
 <body>
 
 <header>
-    <h1>Lic. Vanesa Moreno, Psicóloga</h1>
-    <p>Matrícula Nacional N° 61399</p>
-    <div class="foto-container">
-        <img src="foto4x4.png" alt="Lic. Vanesa Moreno" />
-    </div>
+  <h1>Lic. Vanesa Moreno, Psicóloga</h1>
+  <p>Matrícula Nacional N° 61399</p>
+  <div class="foto-container">
+    <img src="foto4x4.png" alt="Lic. Vanesa Moreno" />
+  </div>
 </header>
 
-<section>
-    <h2>¿En qué puedo ayudarte?</h2>
-    <ul>
-        <li>Autoconocimiento y desarrollo personal</li>
-        <li>Gestión de la ansiedad</li>
-        <li>Dificultades en la comunicación</li>
-        <li>Desmotivación laboral o profesional</li>
-        <li>Perfeccionismo y exigencia excesiva</li>
-        <li>Dificultad para tomar decisiones</li>
-        <li>Procrastinación y falta de enfoque</li>
-    </ul>
+<nav>
+  <a href="#ayuda">¿En qué puedo ayudarte?</a>
+  <a href="#online">Consultas Online</a>
+  <a href="#testimonios">Comentarios</a>
+</nav>
+
+<section id="ayuda">
+  <h2>¿En qué puedo ayudarte?</h2>
+  <ul>
+    <li>Autoconocimiento y desarrollo personal</li>
+    <li>Gestión de la ansiedad</li>
+    <li>Dificultades en la comunicación</li>
+    <li>Desmotivación laboral o profesional</li>
+    <li>Perfeccionismo y exigencia excesiva</li>
+    <li>Dificultad para tomar decisiones</li>
+    <li>Procrastinación y falta de enfoque</li>
+  </ul>
 </section>
 
-<section>
-    <h2>Consultas Online</h2>
-    <p>La terapia online te permite acceder a un espacio de acompañamiento psicológico desde cualquier lugar. Solo necesitás un dispositivo con conexión a internet y un espacio privado donde te sientas cómod@.</p>
+<section id="online">
+  <h2>Consultas Online</h2>
+  <p>La terapia online te permite acceder a un espacio de acompañamiento psicológico desde cualquier lugar. Solo necesitás un dispositivo con conexión a internet y un espacio privado donde te sientas cómod@.</p>
 </section>
 
-<section class="testimonios">
-    <h2>Algunos comentarios</h2>
-    <div class="comentario">“Vanesa me ayudó a identificar las trabas que tenía en el trabajo. Gracias a su acompañamiento, logré postularme a un ascenso y lo conseguí.”<br><strong>— Romina F.</strong></div>
-    <div class="comentario">“Me mudé desde Perú a México y fue muy difícil adaptarme. Gracias a las sesiones con Vanesa, el proceso fue mucho más llevadero.”<br><strong>— José Q.</strong></div>
-    <div class="comentario">“Comencé con episodios de ansiedad muy fuertes. Con Vanesa aprendí a identificar qué los desencadenaba y mi calidad de vida mejoró muchísimo.”<br><strong>— Micaela M.</strong></div>
+<section class="testimonios" id="testimonios">
+  <h2>Algunos comentarios</h2>
+  <div class="carrusel-container">
+    <div class="carrusel" id="carrusel">
+      <div class="comentario">“Vanesa me ayudó a identificar las trabas que tenía en el trabajo. Gracias a su acompañamiento, logré postularme a un ascenso y lo conseguí.”<br><strong>— Romina F.</strong></div>
+      <div class="comentario">“Me mudé desde Perú a México y fue muy difícil adaptarme. Gracias a las sesiones con Vanesa, el proceso fue mucho más llevadero.”<br><strong>— José Q.</strong></div>
+      <div class="comentario">“Comencé con episodios de ansiedad muy fuertes. Con Vanesa aprendí a identificar qué los desencadenaba y mi calidad de vida mejoró muchísimo.”<br><strong>— Micaela M.</strong></div>
+    </div>
+    <div class="dots">
+      <span class="dot active" onclick="moverCarrusel(0)"></span>
+      <span class="dot" onclick="moverCarrusel(1)"></span>
+      <span class="dot" onclick="moverCarrusel(2)"></span>
+    </div>
+  </div>
 </section>
 
 <footer>
-    <div class="firma">Vanesa Moreno</div>
-    <p>Todos los derechos reservados</p>
-    <p><a href="mailto:lic.vanesamoreno@gmail.com">Reservá tu primera sesión</a></p>
+  <div class="firma">Vanesa Moreno</div>
+  <p>Todos los derechos reservados</p>
+  <p><a href="mailto:lic.vanesamoreno@gmail.com">Reservá tu primera sesión</a></p>
 </footer>
+
+<script>
+  let indice = 0;
+  const carrusel = document.getElementById('carrusel');
+  const dots = document.querySelectorAll('.dot');
+
+  function moverCarrusel(n) {
+    indice = n;
+    actualizarCarrusel();
+  }
+
+  function actualizarCarrusel() {
+    carrusel.style.transform = 'translateX(' + (-indice * 100) + '%)';
+    dots.forEach(dot => dot.classList.remove('active'));
+    dots[indice].classList.add('active');
+  }
+
+  setInterval(() => {
+    indice = (indice + 1) % 3;
+    actualizarCarrusel();
+  }, 6000);
+</script>
 
 </body>
 </html>
