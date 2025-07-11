@@ -147,6 +147,85 @@
     <p>Email: <a href="mailto:lic.vanesamoreno@gmail.com">lic.vanesamoreno@gmail.com</a></p>
     <a href="mailto:lic.vanesamoreno@gmail.com" class="btn">✉️ Reservá tu primera sesión</a>
   </section>
+  <section id="testimonios" style="background: #fff8f2; padding: 3rem 1rem;">
+  <h2 style="text-align: center; font-size: 2rem; margin-bottom: 2rem;">Testimonios</h2>
+
+  <div class="slider-container">
+    <div class="slide active">
+      <p>“Vanesa me ayudó a reconocer cuáles eran las barreras internas que me estaban limitando en el trabajo. Gracias a su acompañamiento, gané confianza, me animé a postularme para un ascenso… ¡y lo obtuve! Estoy profundamente agradecida.”<br><strong>— Romina F.</strong></p>
+    </div>
+    <div class="slide">
+      <p>“Mudarme de Perú a México fue un proceso muy desafiante. Sentía el desarraigo y la adaptación como una carga difícil de llevar. Gracias al espacio terapéutico con Vanesa, pude atravesar ese momento con más claridad y fortaleza. Todo se volvió mucho más llevadero.”<br><strong>— José Q.</strong></p>
+    </div>
+    <div class="slide">
+      <p>“Cuando comencé la terapia, tenía episodios de ansiedad muy intensos que afectaban mi vida cotidiana. Con Vanesa fuimos identificando los desencadenantes y trabajando sobre los pensamientos que me generaban esas reacciones. Aunque seguimos en proceso, mi calidad de vida mejoró radicalmente en pocos meses.”<br><strong>— Micaela M.</strong></p>
+    </div>
+  </div>
+
+  <div class="dots" style="text-align: center; margin-top: 1rem;">
+    <span class="dot active" onclick="showSlide(0)"></span>
+    <span class="dot" onclick="showSlide(1)"></span>
+    <span class="dot" onclick="showSlide(2)"></span>
+  </div>
+</section>
+
+<style>
+  .slider-container {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .slide {
+    display: none;
+    font-style: italic;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    padding: 1rem;
+    box-sizing: border-box;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .slide.active {
+    display: block;
+  }
+
+  .dots .dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 6px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+
+  .dots .dot.active {
+    background-color: #A88B6C;
+  }
+
+  @media (max-width: 600px) {
+    .slide {
+      font-size: 1rem;
+      padding: 0.5rem;
+    }
+  }
+</style>
+
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.slide');
+  const dots = document.querySelectorAll('.dot');
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+      dots[i].classList.toggle('active', i === index);
+    });
+    currentSlide = index;
+  }
+</script>
 
   <div class="firma">Lic. Vanesa Moreno</div>
 
